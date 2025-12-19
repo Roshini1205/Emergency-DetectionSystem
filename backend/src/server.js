@@ -11,14 +11,14 @@ const PORT = process.env.PORT || 4001;
 const CORS_ORIGIN = (process.env.CORS_ORIGIN || 'http://localhost:5173').split(',');
 
 // Middlewares
-app.use(express.json());
+app.use(express.json()); 
 app.use(cors({ origin: CORS_ORIGIN, credentials: true }));
 
 // Routes
 import authRoutes from './routes/auth.js';
 import audioRoutes from './routes/audio.js';
 import userRoutes from './routes/user.js';
-import notifyRoutes from './routes/notify.js';
+import notifyRoutes from './routes/notify.js'; 
 
 app.use('/api/auth', authRoutes);
 app.use('/api/audio', audioRoutes);

@@ -4,35 +4,47 @@ This directory contains the YAMNet-based audio classification model for detectin
 
 ## Setup
 
-1. **Create Python virtual environment:**
+1. **Install FFmpeg (required for audio processing):**
+   ```bash
+   # macOS
+   brew install ffmpeg
+   
+   # Ubuntu/Debian
+   sudo apt-get install ffmpeg
+   
+   # Or use conda
+   conda install -c conda-forge ffmpeg
+   ```
+
+2. **Create Python virtual environment:**
    ```bash
    cd ai-model
    python3 -m venv venv
    source venv/bin/activate  # On Windows: venv\Scripts\activate
    ```
 
-2. **Install dependencies:**
+3. **Install dependencies:**
    ```bash
    pip install -r requirements.txt
    ```
 
-3. **Run the server:**
+4. **Run the server:**
    ```bash
    python yamnet_server.py
    ```
 
-   The server will start on `http://localhost:5000`
+   The server will start on `http://localhost:5050`
 
 ## API Endpoints
 
 ### Health Check
 ```bash
-GET http://localhost:5000/health
+GET http://localhost:5050/health
 ```
 
 ### Analyze Audio File
 ```bash
-POST http://localhost:5000/analyze
+POST http://localhost:5050/analyze
 Content-Type: multipart/form-data
 
 Body: audio file (WAV, MP3, etc.)
@@ -40,12 +52,12 @@ Body: audio file (WAV, MP3, etc.)
 
 Example with curl:
 ```bash
-curl -X POST -F "audio=@recording.wav" http://localhost:5000/analyze
+curl -X POST -F "audio=@recording.wav" http://localhost:5050/analyze
 ```
 
 ### Real-time Stream Analysis
 ```bash
-POST http://localhost:5000/stream-analyze
+POST http://localhost:5050/stream-analyze
 Content-Type: multipart/form-data
 
 Body: audio chunk
@@ -95,7 +107,7 @@ async function analyzeAudio(audioBuffer) {
   const formData = new FormData();
   formData.append('audio', audioBuffer, 'audio.wav');
   
-  const response = await axios.post('http://localhost:5000/analyze', formData, {
+  const response = await axios.post('http://localhost:5050/analyze', formData, {
     headers: formData.getHeaders()
   });
   

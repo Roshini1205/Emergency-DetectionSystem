@@ -175,19 +175,23 @@ export default function EmergencyDashboard() {
     
     // Get user ID from localStorage if available
     const storedUser = localStorage.getItem('user');
+    let userId = null;
     if (storedUser) {
       try {
         const userData = JSON.parse(storedUser);
-        // Assuming the user object has an _id or id field. 
-        // If the backend expects 'userId', we need to make sure we send the right ID.
-        // Usually MongoDB users have _id.
-        const uid = userData._id || userData.id;
-        if (uid) {
-          formData.append('userId', uid);
+        // Backend returns id (converted from _id)
+        userId = userData.id || userData._id;
+        if (userId) {
+          formData.append('userId', userId);
+          console.log('🔐 Sending audio chunk for user:', userId);
+        } else {
+          console.warn('⚠️ No userId found in localStorage');
         }
       } catch (e) {
         console.error("Error parsing user for ID", e);
       }
+    } else {
+      console.warn('⚠️ No user data in localStorage - please login');
     }
     
     // Add location if available (mock for now)
@@ -198,23 +202,35 @@ export default function EmergencyDashboard() {
         method: 'POST',
         body: formData,
       });
+      
+      if (!response.ok) {
+        console.error('Stream analysis failed:', response.status, response.statusText);
+        return;
+      }
+      
       const ct = response.headers.get('content-type') || '';
       const text = await response.text();
+      
       if (!text) return; // nothing to do
-      if (!ct.includes('application/json')) return; // not JSON
-      try {
-        const data = JSON.parse(text);
-        setLiveAnalysis(data);
-      } catch (e) {
-        // swallow parse errors for streaming to avoid UI crashes
+      if (!ct.includes('application/json')) {
+        console.warn('Non-JSON response:', text);
+        return;
       }
-      // console.log('Analysis result:', data);
+      
+      let data = null;
+      try {
+        data = JSON.parse(text);
+        setLiveAnalysis(data);
+        console.log('Analysis result:', data);
+      } catch (e) {
+        console.error('JSON parse error:', e);
+        return;
+      }
       
       // If dangerous sound detected, show alert in UI
-      // The backend returns { top_class: "...", confidence: ... }
-      if (data.top_class) {
+      if (data && data.top_class) {
          // We can update the UI to show what is being detected
-         // For now just log it
+         console.log('Detected:', data.top_class, 'Confidence:', data.confidence);
       }
 
     } catch (error) {
@@ -270,6 +286,7 @@ export default function EmergencyDashboard() {
     if (recognitionRef.current) {
       recognitionRef.current.stop();
     }
+    console.log("Running........?");
     
     if (mediaRecorderRef.current) {
       if (mediaRecorderRef.current.intervalId) {

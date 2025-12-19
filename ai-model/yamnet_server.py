@@ -20,6 +20,45 @@ from flask_cors import CORS
 # ===============================
 ssl._create_default_https_context = ssl._create_unverified_context
 
+# Find ffmpeg in multiple locations
+def find_ffmpeg():
+    """Find ffmpeg executable in conda env, system PATH, or common locations"""
+    # Check conda environment first
+    conda_paths = [
+        '/opt/anaconda3/envs/emergency_env/bin/ffmpeg',
+        '/usr/local/anaconda3/envs/emergency_env/bin/ffmpeg',
+        os.path.expanduser('~/anaconda3/envs/emergency_env/bin/ffmpeg'),
+        os.path.expanduser('~/opt/anaconda3/envs/emergency_env/bin/ffmpeg'),
+    ]
+    
+    for path in conda_paths:
+        if os.path.exists(path):
+            return path
+    
+    # Check if ffmpeg is in PATH
+    try:
+        result = subprocess.run(['which', 'ffmpeg'], capture_output=True, text=True)
+        if result.returncode == 0:
+            return result.stdout.strip()
+    except:
+        pass
+    
+    # Common system locations
+    common_paths = [
+        '/usr/local/bin/ffmpeg',
+        '/usr/bin/ffmpeg',
+        '/opt/homebrew/bin/ffmpeg',
+    ]
+    
+    for path in common_paths:
+        if os.path.exists(path):
+            return path
+    
+    return 'ffmpeg'  # fallback to PATH lookup
+
+FFMPEG_PATH = find_ffmpeg()
+print(f"🎬 FFmpeg path: {FFMPEG_PATH}")
+
 # Ensure ffmpeg is visible (important for conda/env)
 env_bin = os.path.dirname(sys.executable)
 os.environ["PATH"] = env_bin + os.pathsep + os.environ.get("PATH", "")
@@ -54,6 +93,7 @@ EMERGENCY_CLASSES = {
     "Crash": ["Crash", "Bang", "Slam", "Thump"],
     "Alarm": ["Alarm", "Smoke detector", "Fire alarm", "Siren"],
     "Violence": ["Gunshot", "Explosion", "Fighting"],
+    "Cough": ["Cough", "Coughing", "Wheeze", "Gasp"],
 }
 
 # ===============================
@@ -98,7 +138,7 @@ def load_audio(file_storage):
         temp_wav = temp_input + ".wav"
 
         cmd = [
-            "ffmpeg", "-y",
+            FFMPEG_PATH, "-y",
             "-i", temp_input,
             "-vn",
             "-ac", "1",
@@ -159,6 +199,7 @@ def classify(scores, class_names):
     return {
         "emergency_detected": emergency,
         "type": detected_type,
+        "top_class": detected_type,  # For frontend compatibility
         "confidence": round(max_conf, 2),
         "detections": detections[:5]
     }

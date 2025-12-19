@@ -13,7 +13,7 @@ const upload = multer({
   limits: { fileSize: 5 * 1024 * 1024 } // 5MB max
 });
 
-const YAMNET_API_URL = process.env.YAMNET_API_URL || 'http://localhost:5000';
+const YAMNET_API_URL = process.env.YAMNET_API_URL || 'http://localhost:5050';
 
 const DANGER_CLASSES = ['scream','cry','glass','gunshot','explosion','cough','crash'];
 const normalize = txt => txt.toLowerCase().replace(/_/g,' ').trim();

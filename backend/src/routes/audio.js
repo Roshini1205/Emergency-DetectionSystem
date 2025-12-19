@@ -14,7 +14,7 @@ const upload = multer({
   limits: { fileSize: 5 * 1024 * 1024 } // ⬅ safer 5MB
 });
 
-const YAMNET_API_URL = process.env.YAMNET_API_URL || 'http://localhost:5000';
+const YAMNET_API_URL = process.env.YAMNET_API_URL || 'http://localhost:5050';
 
 const DANGER_CLASSES = [
   'scream',
@@ -23,7 +23,9 @@ const DANGER_CLASSES = [
   'gunshot',
   'explosion',
   'cough',
-  'crash'
+  'crash',
+  'alarm',
+  'violence'
 ];
 
 const normalize = (txt = '') =>
@@ -96,11 +98,16 @@ router.post('/stream-analyze', upload.single('chunk'), async (req, res) => {
       contentType: 'audio/webm'
     });
 
+    console.log('Sending chunk to AI model:', `${YAMNET_API_URL}/stream-analyze`);
+    
     const aiResponse = await axios.post(
       `${YAMNET_API_URL}/stream-analyze`,
       formData,
       { headers: formData.getHeaders(), timeout: 10000 }
-    );
+    ).catch(err => {
+      console.error('AI model connection error:', err.message);
+      throw new Error(`AI model unavailable: ${err.message}`);
+    });
 
     const { emergency_detected, type, confidence } = aiResponse.data || {};
 
@@ -113,6 +120,13 @@ router.post('/stream-analyze', upload.single('chunk'), async (req, res) => {
       );
 
     if (isDanger && userId) {
+      console.log('🚨 EMERGENCY DETECTED:', {
+        type,
+        confidence: Math.round(confidence),
+        userId,
+        location: location || 'Unknown'
+      });
+
       const alert = await Alert.create({
         userId,
         type,
@@ -122,21 +136,31 @@ router.post('/stream-analyze', upload.single('chunk'), async (req, res) => {
         // ❌ audioData REMOVED (very important)
       });
 
+      console.log('✅ Alert saved to database:', alert._id);
+
       // 🔔 async notify
       sendEmergencyNotification(
         userId,
         type,
         alert.confidence,
         alert.location
-      ).catch(console.error);
+      ).then(results => {
+        console.log('📧 Notifications sent:', results);
+      }).catch(err => {
+        console.error('❌ Notification error:', err.message);
+      });
+    } else if (isDanger && !userId) {
+      console.warn('⚠️ Emergency detected but no userId provided - cannot send notifications');
     }
 
     res.json(aiResponse.data);
   } catch (err) {
-    console.error('Stream error:', err.message);
+    console.error('Stream analysis error:', err.message);
+    console.error('Full error:', err);
     res.status(500).json({
       message: 'Stream analysis failed',
-      error: err.message
+      error: err.message,
+      details: err.response?.data || 'AI model connection failed'
     });
   }
 });
