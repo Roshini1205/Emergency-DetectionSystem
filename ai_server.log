@@ -1,0 +1,515 @@
+
+🚀 YAMNet Emergency Detection Server running on port 5050
+📡 Test with: curl -X POST -F 'audio=@your_audio.wav' http://localhost:5050/analyze
+
+Loading YAMNet model from: https://tfhub.dev/google/yamnet/1
+YAMNet model loaded successfully!
+ * Serving Flask app 'yamnet_server'
+ * Debug mode: on
+
+🚀 YAMNet Emergency Detection Server running on port 5050
+📡 Test with: curl -X POST -F 'audio=@your_audio.wav' http://localhost:5050/analyze
+
+Loading YAMNet model from: https://tfhub.dev/google/yamnet/1
+YAMNet model loaded successfully!
+Error loading audio: Error opening <_io.BytesIO object at 0x157fd3c40>: (Garbled error message from libsndfile)
+Error loading audio: Error opening <_io.BytesIO object at 0x15aa74540>: (Garbled error message from libsndfile)
+Error loading audio: Error opening <_io.BytesIO object at 0x157f07100>: (Garbled error message from libsndfile)
+Error loading audio: Error opening <_io.BytesIO object at 0x15b30c0e0>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b30c220>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x157fd3c40>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b0bbd80>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15aa74ef0>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b30d170>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b30e480>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b30dc60>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b30e840>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b30dc10>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b0bbe70>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b30dc10>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b30ce00>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b30de40>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b30d030>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b30e980>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b30c4a0>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b30e980>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15aa75a30>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x157f275b0>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b30ef20>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b30e1b0>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b30e6b0>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b30dcb0>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b30df30>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b30dfd0>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15aa77920>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b30d490>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x1283f55d0>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b30fdd0>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b30e570>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b30fa10>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b30ec00>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b30f010>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15aa76de0>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b30e4d0>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b30d940>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b30f560>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b30fdd0>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b30d5d0>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b30eac0>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15aa76700>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b30f0b0>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b30e570>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b30ed90>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b30c630>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b30ecf0>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b30c040>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15aa76de0>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b30d850>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b30ca90>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b30f240>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b30ed40>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b30c360>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b30eac0>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15aa75a30>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b30ffb0>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b30ee30>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b30f600>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b30fa60>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b30e0c0>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b30df30>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b30e0c0>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b30dc60>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b30d8a0>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15aa74ef0>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b30f380>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b30f880>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b30dad0>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b30d8a0>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b30f790>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b30fec0>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b30d940>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b30d530>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b0bbf10>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b30c950>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b30d170>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b30d8a0>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b30f8d0>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b30c220>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b30e980>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b30d8a0>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15aa75620>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x157fd3c40>: Format not recognised.
+Starting yamnet_server.py...
+
+🚀 YAMNet Emergency Detection Server running on port 5050
+📡 Test with: curl -X POST -F 'audio=@your_audio.wav' http://localhost:5050/analyze
+
+Loading YAMNet model from: https://tfhub.dev/google/yamnet/1
+YAMNet model loaded successfully!
+Error loading audio: Error opening <_io.BytesIO object at 0x15a9ca4d0>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x14fe41cb0>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x14fe42890>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15a9c8040>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b1b7c90>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b21c220>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b21da80>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x14feab010>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15aa65a30>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b21c3b0>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b21cae0>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b21ddf0>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b21ce50>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15a9cae80>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15aa64a90>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b21eac0>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b21ea70>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b21c860>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b21cd60>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b21d8a0>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b21df80>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b21f6a0>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b1b7e70>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15aa64d10>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b21e8e0>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b21d210>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b21ec50>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b21c9f0>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b21d3a0>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b21d3a0>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b21ea70>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15aa65e90>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15a9c8a40>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b21e8e0>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b21c7c0>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b21c9a0>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b21f1a0>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b21ecf0>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b21c8b0>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b21c5e0>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b21e390>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b21e110>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b21d260>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b21f1a0>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b21c9f0>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b21d5d0>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b21c680>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b21d210>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b21fa10>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15aa64bd0>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b21e7f0>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b21f920>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b21fb00>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b21fe20>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b21d580>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b21e1b0>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b21fba0>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b21cf40>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b21c680>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b21cae0>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b21fe70>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b21e1b0>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b21e890>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b21e660>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b21e250>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b21f600>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b21ede0>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b21c220>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b21db20>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b21ebb0>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x15b21f0b0>: Format not recognised.
+Starting yamnet_server.py...
+Imported tensorflow
+Imported tensorflow_hub
+Imported librosa
+Imported flask
+
+🚀 YAMNet Emergency Detection Server running on port 5050
+📡 Test with: curl -X POST -F 'audio=@your_audio.wav' http://localhost:5050/analyze
+
+Loading YAMNet model from: https://tfhub.dev/google/yamnet/1
+YAMNet model loaded successfully!
+Error loading audio: Error opening <_io.BytesIO object at 0x11752f3d0>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x115c2c6d0>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x117b2fe20>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x117b1c810>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x11752cd10>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x117b1d120>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x117b1cb30>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x11752cd10>: Format not recognised.
+Error loading audio: Error opening <_io.BytesIO object at 0x117b2fb00>: Format not recognised.
+/opt/anaconda3/envs/emergency_env/lib/python3.10/site-packages/tensorflow_hub/__init__.py:61: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5050
+ * Running on http://10.121.168.201:5050
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+/opt/anaconda3/envs/emergency_env/lib/python3.10/site-packages/tensorflow_hub/__init__.py:61: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 612-237-754
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:36:11] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:36:11] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:36:11] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:36:11] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:36:11] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:36:11] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:36:12] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:36:13] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:36:14] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:36:15] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:36:16] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:36:17] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:36:18] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:36:19] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:36:20] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:36:21] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:36:22] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:36:23] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:36:24] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:36:26] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:36:27] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:36:28] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:36:29] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:36:30] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:36:31] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:36:32] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:36:33] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:36:34] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:36:35] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:36:36] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:36:37] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:36:38] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:36:39] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:36:40] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:36:41] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:36:42] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:36:43] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:36:44] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:36:45] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:36:46] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:36:47] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:36:48] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:36:49] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:36:50] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:36:51] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:36:52] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:36:53] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:36:54] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:36:55] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:36:56] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:36:57] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:36:58] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:36:59] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:37:00] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:37:01] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:37:02] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:37:03] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:37:04] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:37:05] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:37:06] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:37:07] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:37:08] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:37:09] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:37:10] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:37:11] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:37:12] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:37:13] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:37:14] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:37:15] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:37:16] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:37:18] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:37:19] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:37:20] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:37:21] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:37:22] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:37:23] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:37:24] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:37:25] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:37:26] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:37:27] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:37:28] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:37:29] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:37:30] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:37:31] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:37:32] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:37:33] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:37:34] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug: * Detected change in '/Users/roshinibandaru/Desktop/Emergency-DetectionSystem/ai-model/yamnet_server.py', reloading
+INFO:werkzeug: * Restarting with stat
+/opt/anaconda3/envs/emergency_env/lib/python3.10/site-packages/tensorflow_hub/__init__.py:61: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 612-237-754
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:37:42] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:37:42] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:37:42] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:37:42] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:37:42] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:37:42] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:37:42] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:37:42] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:37:43] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:37:44] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:37:45] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:37:46] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:37:47] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:37:48] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:37:49] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:37:50] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:37:51] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:37:52] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:37:53] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:37:54] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:37:55] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:37:56] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:37:57] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:37:58] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:37:59] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:38:00] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:38:01] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:38:02] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:38:03] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:38:04] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:38:05] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:38:06] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:38:07] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:38:09] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:38:10] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:38:11] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:38:12] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:38:13] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:38:14] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:38:15] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:38:16] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:38:17] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:38:18] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:38:19] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:38:20] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:38:21] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:38:22] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:38:23] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:38:24] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:38:25] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:38:26] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:38:27] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:38:28] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:38:29] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:38:30] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:38:31] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:38:32] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:38:33] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:38:34] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:38:35] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:38:36] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:38:37] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:38:38] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:38:39] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:38:40] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:38:41] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:38:42] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:38:43] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:38:44] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:38:45] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:38:46] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug: * Detected change in '/Users/roshinibandaru/Desktop/Emergency-DetectionSystem/ai-model/yamnet_server.py', reloading
+INFO:werkzeug: * Restarting with stat
+/opt/anaconda3/envs/emergency_env/lib/python3.10/site-packages/tensorflow_hub/__init__.py:61: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 612-237-754
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:38:54] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:38:54] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:38:54] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:38:54] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:38:54] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:38:54] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:38:54] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:38:54] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:38:55] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug: * Detected change in '/Users/roshinibandaru/Desktop/Emergency-DetectionSystem/ai-model/yamnet_server.py', reloading
+INFO:werkzeug: * Restarting with stat
+/opt/anaconda3/envs/emergency_env/lib/python3.10/site-packages/tensorflow_hub/__init__.py:61: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import parse_version
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 612-237-754
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:39:02] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:39:02] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:39:02] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:39:02] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:39:02] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:39:02] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:39:03] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:39:04] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:39:05] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:39:06] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:39:07] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:39:08] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:39:09] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:39:10] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:39:11] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:39:12] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:39:13] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:39:14] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:39:15] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:39:16] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:39:17] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:39:18] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:39:19] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:39:20] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:39:21] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:39:22] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:39:23] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:39:24] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:39:25] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:39:26] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:39:27] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:39:28] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:39:29] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:39:30] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:39:31] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:39:32] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:39:33] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:39:34] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:39:35] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:39:36] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:39:37] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:39:38] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:39:39] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:39:40] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:39:41] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:39:42] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:39:43] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:39:44] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:39:45] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:39:46] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:39:47] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:39:48] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:39:50] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:39:51] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:39:52] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:39:53] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:39:54] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:39:55] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:39:56] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:39:57] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:39:58] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:39:59] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:40:00] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:40:01] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:40:02] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:40:03] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:40:04] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:40:05] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:40:06] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:40:07] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:40:08] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:40:09] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:40:10] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:40:11] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:40:12] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:40:13] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:40:14] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:40:15] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:40:16] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:40:17] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:40:18] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:40:19] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:40:20] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:40:21] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:40:22] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:40:23] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:40:24] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:40:25] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:40:26] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:40:27] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:40:28] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:40:29] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:40:30] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:40:31] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:40:32] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:40:33] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:40:34] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:40:35] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:40:36] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:40:37] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:40:38] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:40:39] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:40:41] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:40:42] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:40:43] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:40:44] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:40:45] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:40:46] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:40:47] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:40:48] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+INFO:werkzeug:127.0.0.1 - - [19/Dec/2025 01:40:49] "[31m[1mPOST /stream-analyze HTTP/1.1[0m" 400 -
+/var/folders/b8/s48bjyg540z_b2w4_ncd408r0000gn/T/tmpbl4dzvxd: line 3: 42986 Killed: 9               python ai-model/yamnet_server.py
+/opt/anaconda3/envs/emergency_env/lib/python3.10/multiprocessing/resource_tracker.py:224: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+/opt/anaconda3/envs/emergency_env/lib/python3.10/multiprocessing/resource_tracker.py:224: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+
+ERROR conda.cli.main_run:execute(127): `conda run python ai-model/yamnet_server.py` failed. (See above for error)
+

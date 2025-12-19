@@ -1,0 +1,10 @@
+tensorflow>=2.13.0
+tensorflow-hub>=0.14.0
+numpy>=1.24.3
+scipy>=1.11.1
+librosa>=0.10.0
+soundfile>=0.12.1
+flask>=2.3.2
+flask-cors>=4.0.0
+python-dotenv>=1.0.0
+pandas>=2.0.0

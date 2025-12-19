@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.env
+*.wav
+*.mp3
+*.m4a
+*.flac
+test_audio/
+.DS_Store
