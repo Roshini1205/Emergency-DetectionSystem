@@ -3,8 +3,10 @@ services:
     name: emergency-backend
     rootDir: backend
     env: node
+    region: oregon
+    plan: free
     buildCommand: npm install
-    startCommand: node src/server.js
+    startCommand: npm start
     envVars:
       - key: NODE_ENV
         value: production
