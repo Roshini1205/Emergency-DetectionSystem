@@ -238,6 +238,59 @@ export default function EmergencyDashboard() {
     }
   };
 
+  // SOS Emergency Handler - Direct alert without mic
+  const handleSOSEmergency = async () => {
+    try {
+      const storedUser = localStorage.getItem('user');
+      if (!storedUser) {
+        alert('Please login first');
+        return;
+      }
+
+      const userData = JSON.parse(storedUser);
+      const userId = userData.id || userData._id;
+
+      if (!userId) {
+        alert('User ID not found');
+        return;
+      }
+
+      // Confirm SOS action
+      const confirmed = window.confirm(
+        '🚨 EMERGENCY ALERT\n\nThis will immediately notify your emergency contacts.\n\nAre you sure you want to proceed?'
+      );
+
+      if (!confirmed) return;
+
+      console.log('🚨 SOS Emergency triggered by user:', userId);
+
+      // Send direct emergency notification
+      const response = await fetch('http://localhost:4001/api/notify/emergency', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          userId: userId,
+          type: 'Manual SOS Alert',
+          confidence: 100,
+          location: 'User Dashboard - Manual SOS Trigger',
+        }),
+      });
+
+      if (response.ok) {
+        alert('✅ Emergency alert sent successfully!\n\nYour emergency contacts have been notified.');
+      } else {
+        const errorText = await response.text();
+        console.error('SOS failed:', errorText);
+        alert('❌ Failed to send emergency alert. Please try again.');
+      }
+    } catch (error) {
+      console.error('SOS Error:', error);
+      alert('❌ Error sending emergency alert. Please check your connection.');
+    }
+  };
+
   const startListening = async () => {
     try {
       const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
@@ -475,7 +528,7 @@ export default function EmergencyDashboard() {
 
             <div className="space-y-6">
               {/* Microphone Control */}
-              <div className="flex items-center justify-center">
+              <div className="flex flex-col items-center justify-center space-y-4">
                 <button
                   onClick={listening ? stopListening : startListening}
                   className={`relative group/mic p-8 rounded-full transition-all duration-300 ${
@@ -490,6 +543,17 @@ export default function EmergencyDashboard() {
                   ) : (
                     <Mic className="relative w-12 h-12 text-white" />
                   )}
+                </button>
+
+                {/* SOS Button - Direct emergency alert without mic */}
+                <button
+                  onClick={handleSOSEmergency}
+                  className="relative group/sos px-12 py-4 rounded-2xl font-bold text-2xl transition-all duration-300 bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 shadow-xl shadow-red-500/30 hover:shadow-2xl hover:shadow-red-600/50 border-2 border-white/20 hover:scale-105"
+                >
+                  <div className="absolute inset-0 bg-gradient-to-r from-red-600 to-red-500 rounded-2xl blur-xl opacity-50 group-hover/sos:opacity-100 transition-opacity"></div>
+                  <span className="relative text-white tracking-wider">
+                    🚨 SOS EMERGENCY
+                  </span>
                 </button>
               </div>
 
@@ -537,16 +601,7 @@ export default function EmergencyDashboard() {
                 </div>
               )}
 
-              {/* Instructions */}
-              {!listening && displayTranscripts.length === 0 && (
-                <div className="text-center py-8">
-                  <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-gray-800 to-gray-700 rounded-full mb-4">
-                    <Mic className="w-8 h-8 text-gray-400" />
-                  </div>
-                  <p className="text-gray-400 text-sm mb-2">Click the microphone to start recording</p>
-                  <p className="text-gray-500 text-xs">Your speech will be transcribed in real-time</p>
-                </div>
-              )}
+              
             </div>
           </div>
         </div>
